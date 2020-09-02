@@ -36,10 +36,11 @@ typedef long long int ll;
 void show_screen(string str)
 {
 
-	string s = "", inicio = "+-", fim = "-+";
-	for (int j = 0; j < str.length(); j++)
+	string s = "+";
+	for (int j = 0; j < str.length()+2; j++)
 		s = s + '-';
-	cout << inicio + s + fim + "\n| "+ str + " |\n" + inicio + s + fim << endl;
+	s = s + "+";
+	cout << s + "\n| "+ str + " |\n" + s << endl;
 }
 
 int main()
